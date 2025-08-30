@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação - CassinoBuxBr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="image-showcase fade-in">
+            <img src="img/background.png" alt="CassinoBuxBr Foguete">
+        </div>
+
+        <div class="container slide-in-up-delay">
+            <header>
+                <div class="mobile-image">
+                    <img src="img/background.png" alt="CassinoBuxBr Foguete">
+                </div>
+                <h1 class="animated-text" data-text="Bem vindo ao CassinoBuxBr"></h1>
+                <p class="subtitle fade-in-delay-1">O cassino feito para os brasileiros apostarem robux.</p>
+                <div class="tabs fade-in-delay-2">
+                    <button class="tab active">
+                        Verificar Perfil
+                        <span class="tag">Popular</span>
+                    </button>
+                    <button class="tab" disabled>Login por Jogo</button>
+                </div>
+            </header>
+
+            <main id="verification-flow">
+                <div id="step1" class="fade-in-delay-3">
+                    <div class="form-group">
+                        <label for="username">Seu nome de usuário Roblox</label>
+                        <input type="text" id="username" placeholder="Digite seu nome de usuário...">
+                        <button id="searchBtn" class="button primary">Buscar</button>
+                    </div>
+                    <div id="search-result" class="hidden">
+                        </div>
+                </div>
+
+                <div id="step2" class="hidden">
+                    <div id="user-avatar-container">
+                        </div>
+                    <h2>Sua Frase de Verificação Exclusiva</h2>
+                    <div class="phrase-container">
+                        <p id="verificationPhrase"></p>
+                    </div>
+
+                    <div class="instructions">
+                        <div class="instruction-step">
+                            <div class="step-number">1</div>
+                            <div class="step-text">
+                                <p>Copie e cole a frase na seção "Sobre" do seu perfil Roblox.</p>
+                                <a id="profileLink" href="#" target="_blank" class="button secondary">Abrir Perfil Roblox</a>
+                            </div>
+                        </div>
+                        <div class="instruction-step">
+                            <div class="step-number">2</div>
+                            <div class="step-text">
+                                <p>Quando terminar, clique abaixo para finalizar a verificação.</p>
+                                <button id="verifyBtn" class="button primary">Verificar Conta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <div id="message"></div>
+            
+            <footer>
+                <p>&copy; 2025 CassinoBuxBr - Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
